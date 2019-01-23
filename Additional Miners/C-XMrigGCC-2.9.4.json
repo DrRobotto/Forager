@@ -1,0 +1,31 @@
+{
+    "Path": "xmrig-2.9.4\\xmrig.exe",
+    "Uri": "https://github.com/xmrig/xmrig/releases/download/v2.9.4/xmrig-2.9.4-gcc-win64.zip",
+    "SHA256": "C5875A13677D57A8FCA4C577037B6AC508C8B56EC0A40AE2476886E9D7E94AE9",
+    "Type": "CPU",
+    "Arguments": [
+        "-o #Protocol#://#Server#:#Port#",
+        "-u #Login#",
+        "-p #Password#",
+        "$(if ($Nicehash){'--nicehash'})",
+        "--donate-level 1",
+        "--api-port #APIPort#",
+        "#AlgorithmParameters#"
+    ],
+    "API": "XMRig",
+    "APIPort": 4048,
+    "Fee": 0.01,
+    "Algorithms": {
+        "CnAlloy": "-a cn/xao",
+        "CnArto": "-a cn/rto",
+        "CnFast": "-a cn/msr",
+        "CnHalf": "-a cn/half",
+        "CnHaven": "-a cn-heavy/xhv",
+        "CnHeavy": "-a cn-heavy",
+        "CnLiteV7": "-a cn-lite/1",
+        "CnSaber": "-a cn-heavy/tube",
+        "CnV7": "-a cn/1",
+        "CnV8": "-a cn/2",
+        "CnXTL": "-a cn/xtl"
+    }
+}

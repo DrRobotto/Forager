@@ -1,0 +1,24 @@
+{
+    "Path": "bminer-lite-v13.0.0-6d94ac7\\bminer.exe",
+    "Uri": "https://www.bminercontent.com/releases/bminer-lite-v13.0.0-6d94ac7-amd64.zip",
+    "SHA256": "C81A6EC269552C9E5E27B807075900E6902215B86C73EE8565EB6BA9939C4415",
+    "Type": "NVIDIA",
+    "Arguments": [
+        "-uri ethstratum$(if($enableSSL){'+ssl'})://$([System.Web.HttpUtility]::UrlEncode('#Login#')):$([System.Web.HttpUtility]::UrlEncode('#Password#'))@#Server#:#Port#",
+        "-uri2 #AlgorithmParameters#$(if($enableDualSSL){'+ssl'})://$([System.Web.HttpUtility]::UrlEncode('#LoginDual#')):$([System.Web.HttpUtility]::UrlEncode('#PasswordDual#'))@#ServerDual#:#PortDual#",
+        "-devices #Devices#",
+        "-max-network-failures=0",
+        "-watchdog=false",
+        "-api 127.0.0.1:#APIPort#"
+    ],
+    "API": "BMiner",
+    "APIPort": 4068,
+    "SSL": true,
+    "Fee": 0.02,
+    "CUDA": 9.2,
+    "Algorithms": {
+        "Ethash_Blake2s": "blake2s",
+        "Ethash_Blake14r": "blake14r",
+        "Ethash_Tensority": "tensority"
+    }
+}

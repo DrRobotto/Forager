@@ -18,15 +18,9 @@
     "API": "EWBF",
     "APIPort": 4068,
     "Algorithms": {
-        "Aion": "--algo aion",
         "Equihash144": "--algo 144_5 --pers auto",
-        "EquihashBTCZ": "--algo 144_5 --pers BitcoinZ",
-        "EquihashBTG": "--algo 144_5 --pers BgoldPoW",
-        "EquihashLTZ": "--algo 144_5 --pers ZcashPoW",
-        "EquihashSafe": "--algo 144_5 --pers Safecoin",
-        "EquihashXSG": "--algo 144_5 --pers sngemPoW",
-        "EquihashZEL": "--algo 144_5 --pers ZelProof",
-        "Mars": "--algo 96_5",
-        "Zero": "--algo 192_7 --pers ZERO_PoW"
+        "Equihash192": "--algo 192_7 --pers auto",
+        "Equihash210": "--algo aion",
+        "Equihash96": "--algo 96_5"
     }
 }
